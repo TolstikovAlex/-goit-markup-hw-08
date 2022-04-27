@@ -11,7 +11,7 @@ body {
 
 img {
     display: block;
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -42,36 +42,40 @@ p {
 }
 
 .container {
-    width: 1200px;
-
     padding-right: 15px;
     padding-left: 15px;
     margin-left: auto;
     margin-right: auto;
 
-@media screen and (min-width: 480px) {  
-    width: 480px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
+    @media screen and (max-width:767px) {
+        max-width: 480px;
+    }
 
-@media screen and (min-width: 768px) {
-    width: 768px;
-}
+    @media screen and (min-width:768px) {
+        width: 768px;
+    
+    }
 
-@media screen and (min-width: 1170px) {
-    width: 1170px;
+    @media screen and (min-width:1200px) {
+        width: 1200px;
+    
     }
 }
 
+.section  {
+    padding: 60px 0; 
 
-
-.section {
+    @media screen and (min-width:1200px) {
     padding: 94px 0;
+    }
 }
 
 .section--no-padding-top {
     padding-top: 0;
+
+    @media screen and (max-width:1199px) {
+        display: none;
+    }
 }
 
 .section__title {

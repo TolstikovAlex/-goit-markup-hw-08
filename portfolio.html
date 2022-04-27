@@ -21,20 +21,14 @@
 
     <header class="page-header">
       <div class="page-header__container container">
-        <!-- Navigation -->
-
         <nav class="site-nav">
-          <a href="/" class="logo"
-            >Web<span class="logo__main-color">Studio</span></a
-          >
+          <a href="#" class="logo">Web<span class="logo__main-color">Studio</span></a>
           <ul class="site-nav__list">
             <li class="site-nav__item">
               <a href="./index.html" class="site-nav__link">Студия</a>
             </li>
             <li class="site-nav__item">
-              <a
-                href="./portfolio.html"
-                class="site-nav__link site-nav__link--current"
+              <a href="./portfolio.html" class="site-nav__link site-nav__link--current"
                 >Портфолио</a
               >
             </li>
@@ -97,20 +91,40 @@
           <ul class="project">
             <li class="project__item">
               <article class="card">
-                <a href="#" class="card__link">
+                <a href="/" class="card__link">
                   <div class="card__thumb">
-                    <img
-                      src="./images/project1.jpg"
-                      alt="Сайт проекта технокряк. Члены команды проекта."
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="
+                          ./images/desktop/project1-desktopx1.jpg 1x,
+                          ./images/desktop/project1-desktopx2.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="
+                          ./images/tablet/project1-tabletx1.jpg 1x,
+                          ./images/tablet/project1-tabletx2.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 320px)"
+                        srcset="
+                          ./images/mobile/project1-mobx1.jpg 1x,
+                          ./images/mobile/project1-mobx2.jpg 2x
+                        "
+                      />
+                      <img
+                        src="./images/desktop/project1-desktopx1.jpg"
+                        alt="Сайт проекта технокряк. Члены команды проекта."
+                      />
+                    </picture>
                     <div class="card-overlay">
                       <p class="card-overlay__info">
-                        Ресурс предлагает комплексные предложения с разным
-                        уровнем функционала и сервисов. Все это позволит
-                        посетителю получить исчерпывающие сведения о компании
-                        или частном лице.
+                        Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                        сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                        компании или частном лице.
                       </p>
                     </div>
                   </div>
@@ -126,46 +140,85 @@
               <article class="card">
                 <a href="#" class="card__link">
                   <div class="card__thumb">
-                    <img
-                      src="./images/project2.jpg"
-                      alt="Постер баскетбольных команд New Orleans и Golden Star."
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="
+                          ./images/desktop/project2-desktopx1.jpg 1x,
+                          ./images/desktop/project2-desktopx2.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="
+                          ./images/tablet/project2-tabletx1.jpg 1x,
+                          ./images/tablet/project2-tabletx2.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 320px)"
+                        srcset="
+                          ./images/mobile/project2-mobx1.jpg 1x,
+                          ./images/mobile/project2-mobx2.jpg 2x
+                        "
+                      />
+                      <img
+                        src="./images/desktop/project2-desktopx1.jpg"
+                        alt="Постер баскетбольных команд New Orleans и Golden Star."
+                      />
+                    </picture>
                     <div class="card-overlay">
                       <p class="card-overlay__info">
-                        Ресурс предлагает комплексные предложения с разным
-                        уровнем функционала и сервисов. Все это позволит
-                        посетителю получить исчерпывающие сведения о компании
-                        или частном лице.
+                        Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                        сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                        компании или частном лице.
                       </p>
                     </div>
                   </div>
                   <div class="card__content">
-                    <h2 class="project__title">
-                      Постер New Orlean vs Golden Star
-                    </h2>
+                    <h2 class="project__title">Постер New Orlean vs Golden Star</h2>
                     <p class="project__info">Дизайн</p>
                   </div>
                 </a>
               </article>
             </li>
+
             <li class="project__item">
               <article class="card">
                 <a href="#" class="card__link">
                   <div class="card__thumb">
-                    <img
-                      src="./images/project3.jpg"
-                      alt="Приложение ресторна Seafood. Логотип в виде рыбы с названием ресторана."
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="
+                          ./images/desktop/project3-desktopx1.jpg 1x,
+                          ./images/desktop/project3-desktopx2.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="
+                          ./images/tablet/project3-tabletx1.jpg 1x,
+                          ./images/tablet/project3-tabletx2.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 320px)"
+                        srcset="
+                          ./images/mobile/project3-mobx1.jpg 1x,
+                          ./images/mobile/project3-mobx2.jpg 2x
+                        "
+                      />
+                      <img
+                        src="./images/desktop/project3-desktopx1.jpg"
+                        alt="Приложение ресторна Seafood. Логотип в виде рыбы с названием ресторана."
+                      />
+                    </picture>
                     <div class="card-overlay">
                       <p class="card-overlay__info">
-                        Ресурс предлагает комплексные предложения с разным
-                        уровнем функционала и сервисов. Все это позволит
-                        посетителю получить исчерпывающие сведения о компании
-                        или частном лице.
+                        Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                        сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                        компании или частном лице.
                       </p>
                     </div>
                   </div>
@@ -181,18 +234,38 @@
               <article class="card">
                 <a href="#" class="card__link">
                   <div class="card__thumb">
-                    <img
-                      src="./images/project4.jpg"
-                      alt="Проект Prime. Черные накладные наушники."
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="
+                          ./images/desktop/project4-desktopx1.jpg 1x,
+                          ./images/desktop/project4-desktopx2.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="
+                          ./images/tablet/project4-tabletx1.jpg 1x,
+                          ./images/tablet/project4-tabletx2.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 320px)"
+                        srcset="
+                          ./images/mobile/project4-mobx1.jpg 1x,
+                          ./images/mobile/project4-mobx2.jpg 2x
+                        "
+                      />
+                      <img
+                        src="./images/desktop/project4-desktopx1.jpg"
+                        alt="Проект Prime. Черные накладные наушники."
+                      />
+                    </picture>
                     <div class="card-overlay">
                       <p class="card-overlay__info">
-                        Ресурс предлагает комплексные предложения с разным
-                        уровнем функционала и сервисов. Все это позволит
-                        посетителю получить исчерпывающие сведения о компании
-                        или частном лице.
+                        Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                        сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                        компании или частном лице.
                       </p>
                     </div>
                   </div>
@@ -208,18 +281,38 @@
               <article class="card">
                 <a href="#" class="card__link">
                   <div class="card__thumb">
-                    <img
-                      src="./images/project5.jpg"
-                      alt="Проект Boxes. Две небольшие коробки."
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="
+                          ./images/desktop/project5-desktopx1.jpg 1x,
+                          ./images/desktop/project5-desktopx2.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="
+                          ./images/tablet/project5-tabletx1.jpg 1x,
+                          ./images/tablet/project5-tabletx2.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 320px)"
+                        srcset="
+                          ./images/mobile/project5-mobx1.jpg 1x,
+                          ./images/mobile/project5-mobx2.jpg 2x
+                        "
+                      />
+                      <img
+                        src="./images/desktop/project5-desktopx1.jpg"
+                        alt="Проект Boxes. Две небольшие коробки."
+                      />
+                    </picture>
                     <div class="card-overlay">
                       <p class="card-overlay__info">
-                        Ресурс предлагает комплексные предложения с разным
-                        уровнем функционала и сервисов. Все это позволит
-                        посетителю получить исчерпывающие сведения о компании
-                        или частном лице.
+                        Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                        сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                        компании или частном лице.
                       </p>
                     </div>
                   </div>
@@ -235,18 +328,38 @@
               <article class="card">
                 <a href="#" class="card__link">
                   <div class="card__thumb">
-                    <img
-                      src="./images/project6.jpg"
-                      alt="Веб-сайт Inspiration has no Borders. Страница сайта в темном дизайне."
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="
+                          ./images/desktop/project6-desktopx1.jpg 1x,
+                          ./images/desktop/project6-desktopx2.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="
+                          ./images/tablet/project6-tabletx1.jpg 1x,
+                          ./images/tablet/project6-tabletx2.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 320px)"
+                        srcset="
+                          ./images/mobile/project6-mobx1.jpg 1x,
+                          ./images/mobile/project6-mobx2.jpg 2x
+                        "
+                      />
+                      <img
+                        src="./images/desktop/project6-desktopx1.jpg"
+                        alt="Веб-сайт Inspiration has no Borders. Страница сайта в темном дизайне."
+                      />
+                    </picture>
                     <div class="card-overlay">
                       <p class="card-overlay__info">
-                        Ресурс предлагает комплексные предложения с разным
-                        уровнем функционала и сервисов. Все это позволит
-                        посетителю получить исчерпывающие сведения о компании
-                        или частном лице.
+                        Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                        сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                        компании или частном лице.
                       </p>
                     </div>
                   </div>
@@ -262,18 +375,38 @@
               <article class="card">
                 <a href="#" class="card__link">
                   <div class="card__thumb">
-                    <img
-                      src="./images/project7.jpg"
-                      alt="Издание Limited Edition. Разворот глянцевого журнала."
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="
+                          ./images/desktop/project7-desktopx1.jpg 1x,
+                          ./images/desktop/project7-desktopx2.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="
+                          ./images/tablet/project7-tabletx1.jpg 1x,
+                          ./images/tablet/project7-tabletx2.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 320px)"
+                        srcset="
+                          ./images/mobile/project7-mobx1.jpg 1x,
+                          ./images/mobile/project7-mobx2.jpg 2x
+                        "
+                      />
+                      <img
+                        src="./images/desktop/project7-desktopx1.jpg"
+                        alt="Издание Limited Edition. Разворот глянцевого журнала."
+                      />
+                    </picture>
                     <div class="card-overlay">
                       <p class="card-overlay__info">
-                        Ресурс предлагает комплексные предложения с разным
-                        уровнем функционала и сервисов. Все это позволит
-                        посетителю получить исчерпывающие сведения о компании
-                        или частном лице.
+                        Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                        сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                        компании или частном лице.
                       </p>
                     </div>
                   </div>
@@ -284,22 +417,43 @@
                 </a>
               </article>
             </li>
+
             <li class="project__item">
               <article class="card">
                 <a href="#" class="card__link">
                   <div class="card__thumb">
-                    <img
-                      src="./images/project8.jpg"
-                      alt="Проект LAB. Бирка с названием проекта."
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="
+                          ./images/desktop/project8-desktopx1.jpg 1x,
+                          ./images/desktop/project8-desktopx2.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="
+                          ./images/tablet/project8-tabletx1.jpg 1x,
+                          ./images/tablet/project8-tabletx2.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 320px)"
+                        srcset="
+                          ./images/mobile/project8-mobx1.jpg 1x,
+                          ./images/mobile/project8-mobx2.jpg 2x
+                        "
+                      />
+                      <img
+                        src="./images/desktop/project8-desktopx1.jpg"
+                        alt="Проект LAB. Бирка с названием проекта."
+                      />
+                    </picture>
                     <div class="card-overlay">
                       <p class="card-overlay__info">
-                        Ресурс предлагает комплексные предложения с разным
-                        уровнем функционала и сервисов. Все это позволит
-                        посетителю получить исчерпывающие сведения о компании
-                        или частном лице.
+                        Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                        сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                        компании или частном лице.
                       </p>
                     </div>
                   </div>
@@ -310,22 +464,43 @@
                 </a>
               </article>
             </li>
+
             <li class="project__item">
               <article class="card">
                 <a href="#" class="card__link">
                   <div class="card__thumb">
-                    <img
-                      src="./images/project9.jpg"
-                      alt="Приложение Growing Business. Изображение главной страницы сайта."
-                      width="370"
-                      height="294"
-                    />
+                    <picture>
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="
+                          ./images/desktop/project9-desktopx1.jpg 1x,
+                          ./images/desktop/project9-desktopx2.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="
+                          ./images/tablet/project9-tabletx1.jpg 1x,
+                          ./images/tablet/project9-tabletx2.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 320px)"
+                        srcset="
+                          ./images/mobile/project9-mobx1.jpg 1x,
+                          ./images/mobile/project9-mobx2.jpg 2x
+                        "
+                      />
+                      <img
+                        src="./images/desktop/project9-desktopx1.jpg"
+                        alt="Приложение Growing Business. Изображение главной страницы сайта."
+                      />
+                    </picture>
                     <div class="card-overlay">
                       <p class="card-overlay__info">
-                        Ресурс предлагает комплексные предложения с разным
-                        уровнем функционала и сервисов. Все это позволит
-                        посетителю получить исчерпывающие сведения о компании
-                        или частном лице.
+                        Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                        сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                        компании или частном лице.
                       </p>
                     </div>
                   </div>
@@ -346,30 +521,22 @@
     <footer class="page-footer">
       <div class="container footer">
         <div class="address__list">
-          <a href="/" class="logo"
-            >Web<span class="logo__secondary-color">Studio</span></a
-          >
+          <a href="/" class="logo">Web<span class="logo__secondary-color">Studio</span></a>
 
           <!-- Address -->
 
           <address class="address">
             <ul class="address__items">
               <li class="address__item">
-                <a
-                  href="https://goo.gl/maps/kMmwReeBVjx7soe19"
-                  class="address__item--main"
+                <a href="https://goo.gl/maps/kMmwReeBVjx7soe19" class="address__item--main"
                   >г. Киев, пр-т Леси Украинки, 26</a
                 >
               </li>
               <li class="address__item">
-                <a href="mailto:info@example.com" class="address__item--sub"
-                  >info@example.com
-                </a>
+                <a href="mailto:info@example.com" class="address__item--sub">info@example.com </a>
               </li>
               <li class="address__item">
-                <a href="tel:+38099111111" class="address__item--sub"
-                  >+38 099 111 11 11
-                </a>
+                <a href="tel:+38099111111" class="address__item--sub">+38 099 111 11 11 </a>
               </li>
             </ul>
           </address>
@@ -423,9 +590,7 @@
                 id="footer-email"
                 placeholder="E-mail"
               />
-              <button class="footer__submit-button" type="submit">
-                Подписаться
-              </button>
+              <button class="footer__submit-button" type="submit">Подписаться</button>
             </div>
           </div>
         </form>
