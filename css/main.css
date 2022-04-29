@@ -277,11 +277,11 @@ p {
 
 @media screen and (min-width: 768px) {
   .site-nav {
-    margin-left: 93px;
+    margin-left: 88px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .site-nav__list {
     margin: -16px;
   }
@@ -292,6 +292,13 @@ p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-decoration: none;
   }
 }
 
@@ -308,7 +315,7 @@ p {
   color: #212121;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .site-nav__link {
     display: inline-block;
     font-size: 40px;
