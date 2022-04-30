@@ -65,6 +65,7 @@
 
     @media screen and(min-width:768px) {
         display: flex;
+        flex-grow: 2;
         align-items: center;
     }
 
@@ -91,39 +92,6 @@
     right: 20px;
 }
 
-.contacts__social {
-    display: flex;
-    flex-wrap: wrap;
-
-
-    @media screen and (min-width:768px) {
-        display: none;
-    }
-}
-
-.contacts__social--item {
-        margin-bottom: 48px;
-
-
-&:not(:last-child)::after {
-
-        content: "";
-        width: 22px;
-        border: 1px solid rgba(33, 33, 33, 0.2);
-        margin: 0 10px;
-
-}
-}
-
-.contacts__social--link  {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.22;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-
-    color: $accent-color;
-}
 
 
 

@@ -37,7 +37,9 @@
 }
 
 .card__link {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     text-decoration: none;
     transition: box-shadow 250ms $timing-function;
 
@@ -49,6 +51,7 @@
 }
 
 .card__content {
+    flex-grow: 1;
     padding: 20px 24px;
     outline: 1px solid $project-card-border;
 }
