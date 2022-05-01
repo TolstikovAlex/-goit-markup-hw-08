@@ -6,20 +6,20 @@
     background-color: $primary-white-color;
     border-bottom: $header-border solid $header-border-color;
     z-index: 10;
-
-    }
+}
 
 .page-header__container {
-    @media screen and (max-width:767px) {
-    padding: 16px 15px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @media screen and (max-width: 767px) {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
-    @media screen and (min-width:768px) {
-    display: flex;
-    align-items: center;   
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
     }
 }
 
@@ -30,17 +30,15 @@
     background-color: transparent;
     z-index: 20;
 
-    @media screen and (min-width:768px) {
-    display: none;
-    transition: fill 250ms $timing-function; 
-    
-    &:hover,
-    &:focus {
-        fill: $accent-color;
-    }
-    }
+    @media screen and (min-width: 768px) {
+        display: none;
+        transition: fill 250ms $timing-function;
 
-    
+        &:hover,
+        &:focus {
+            fill: $accent-color;
+        }
+    }
 }
 
 .menu-button .icon-cross {
@@ -57,16 +55,21 @@
 
 .menu-container {
     @media screen and(max-width:767px) {
-    display: none;
-    top: 0;
-    left: 0;
-    justify-content: space-between;
+        display: none;
+        top: 0;
+        left: 0;
+        justify-content: space-between;
     }
 
     @media screen and(min-width:768px) {
         display: flex;
+        margin-left: 88px;
         flex-grow: 2;
         align-items: center;
+    }
+
+    @media screen and (min-width:1200px) {
+        margin-left: 93px;
     }
 
     &.is-open {
@@ -74,16 +77,13 @@
         position: absolute;
         overflow: scroll;
         width: 100%;
-        height:100vh;
+        height: 100vh;
         flex-direction: column;
         padding: 48px 0 0 40px;
         background-color: $primary-white-color;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04),
-        0px 2px 4px rgba(0, 0, 0, 0.08),
-        0px 1px 3px rgba(0, 0, 0, 0.16);
-
-}
-
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+            0px 1px 3px rgba(0, 0, 0, 0.16);
+    }
 }
 
 .menu-container.is-open .icon-cross {
@@ -91,8 +91,3 @@
     top: 20px;
     right: 20px;
 }
-
-
-
-
-

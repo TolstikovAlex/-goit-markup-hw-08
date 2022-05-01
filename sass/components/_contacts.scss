@@ -1,29 +1,27 @@
 .contacts {
-    @media screen and (min-width:768px) {
+    @media screen and (min-width: 768px) {
         margin-left: auto;
     }
 }
 
-.contacts__list{
-
+.contacts__list {
     display: flex;
 
     @media screen and (max-width: 767px) {
-    flex-direction: column-reverse;
-    margin-bottom: 64px;
-}
+        flex-direction: column-reverse;
+        margin-bottom: 64px;
+    }
 
-@media screen and (min-width: 768px) and (max-width:1199px) {
-    flex-wrap: wrap;
-    display: block;
-}
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        flex-wrap: wrap;
+        display: block;
+    }
 }
 
 .contacts__item:not(last-child) {
-    @media screen and (min-width:1200px) {
-    margin-right: 30px
+    @media screen and (min-width: 1200px) {
+        margin-right: 30px;
     }
-
 }
 
 .contacts__link {
@@ -34,20 +32,16 @@
     text-decoration: none;
     color: $primary-text-color;
     fill: $primary-text-color;
-    transition:
-        color 250ms $timing-function,
-        fill 250ms $timing-function;
+    transition: color 250ms $timing-function, fill 250ms $timing-function;
 
+    @media screen and (min-width: 768px) {
 
-
-
-    @media screen and (min-width:768px) {
-    &:hover,
-    &:focus{
-    color: $accent-color;
-    fill: $accent-color;
+        &:hover,
+        &:focus {
+            color: $accent-color;
+            fill: $accent-color;
+        }
     }
-}
 }
 
 @media screen and(max-width:767px) {
@@ -62,13 +56,11 @@
         font-size: 24px;
         line-height: 1.17;
     }
-    
 }
 
 .contacts__icon {
-
-@media screen and (max-width:767px) {
-    display: none; 
+    @media screen and (max-width: 767px) {
+        display: none;
     }
 
     margin-right: 10px;
@@ -78,8 +70,7 @@
     display: flex;
     flex-wrap: wrap;
 
-
-    @media screen and (min-width:768px) {
+    @media screen and (min-width: 768px) {
         display: none;
     }
 }
@@ -87,14 +78,11 @@
 .contacts__social--item {
     margin-bottom: 48px;
 
-
     &:not(:last-child)::after {
-
         content: "";
         width: 22px;
         border: 1px solid rgba(33, 33, 33, 0.2);
         margin: 0 10px;
-
     }
 }
 

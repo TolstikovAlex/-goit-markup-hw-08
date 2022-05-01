@@ -2,14 +2,14 @@
 
 .footer-form {
     display: inline-block;
-    margin-top: 60px; 
-    
-    @media screen and (max-width:1199px) {
-    text-align: center;
+
+    @media screen and (max-width: 1199px) {
+        margin-top: 60px;
+        text-align: center;
     }
 
-    @media screen and (min-width:1200px) {
-    margin-left: 93px;
+    @media screen and (min-width: 1200px) {
+        margin-left: 93px;
     }
 }
 
@@ -28,9 +28,7 @@
     color: $primary-white-color;
 }
 
-
 .footer__submit-button {
-
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -53,29 +51,29 @@
 
     cursor: pointer;
 
-    @media screen and (min-width:768px) and (max-width:1199px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         margin-left: auto;
         margin-right: auto;
         display: flex;
     }
-    
-    @media screen and (min-width:1200px) {
+
+    @media screen and (min-width: 1200px) {
         margin: 0;
         margin-left: 12px;
-    }    
+    }
 
-&::after {
-    content: "";
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    margin-left: 10px;
-    background-image: url(../images/icon-send.svg);
-}
+    &::after {
+        content: "";
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 10px;
+        background-image: url(../images/icon-send.svg);
+    }
 }
 
 .inner-footer-input {
-    max-width:450px;
+    max-width: 450px;
     padding: 0;
     padding-inline: 42px;
     margin: 0;
@@ -88,18 +86,17 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     transition: border-color 250ms $timing-function;
 
-    @media screen and (min-width:768px) {
-    width:450px;
+    @media screen and (min-width: 480px) {
+        width: 450px;
     }
 
-    @media screen and (min-width:1200px) {
-    width: 358px;
+    @media screen and (min-width: 1200px) {
+        width: 358px;
     }
 
-&:hover,
-&:focus {
-    border-color: $accent-color;
-    outline: none;
+    &:hover,
+    &:focus {
+        border-color: $accent-color;
+        outline: none;
     }
 }
-
